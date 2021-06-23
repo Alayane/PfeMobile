@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/CartGroupView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttom_sheet"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_margin="20dp"
+        android:id="@+id/CartItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/background"
+        android:text="Item Name"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        android:layout_gravity="center"
+        android:textColor="@color/background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+    <Button
+        android:id="@+id/btn_less"
+        android:layout_width="0sp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:text="-"
+        android:background="@drawable/button_rounded"/>
+
+    <EditText
+        android:id="@+id/etQte"
+        android:layout_width="0sp"
+        android:enabled="false"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:inputType="number"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="0sp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:text="+"
+        android:background="@drawable/button_rounded"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddToList"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/button_rounded"
+        android:text="Add to list" />
+
+</LinearLayout>

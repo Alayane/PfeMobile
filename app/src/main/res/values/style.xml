@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ButtomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="buttonBarButtonStyle">@style/ButtomSheetStyle</item>
+    </style>
+    <style name="ButtomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>
